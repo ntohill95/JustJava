@@ -1,0 +1,12 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="qty">16sp</dimen>
+    <dimen name="no_value">16sp</dimen>
+    <dimen name="price">16sp</dimen>
+    <dimen name="plus">16sp</dimen>
+    <dimen name="minus">16sp</dimen>
+    <dimen name="coffee">20sp</dimen>
+    <dimen name="thanks">20sp</dimen>
+</resources>

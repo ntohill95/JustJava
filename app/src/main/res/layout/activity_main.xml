@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.justjava.MainActivity">
+
+    <!-- elements in application screens that are purely decorative and do not provide any content
+         or enable a user action should not have accessibility content descriptions.
+         In this case, just suppress the lint warning with a tools:ignore="ContentDescription" attribute.-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg"
+        android:orientation="vertical"
+        android:scaleType="centerCrop">
+
+        <EditText
+            android:id="@+id/name_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/qty" />
+
+        <TextView
+            android:id="@+id/coffee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:text="@string/coffee"
+            android:textAppearance="@style/messages"
+            android:textSize="@dimen/coffee" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/top"
+            android:textAppearance="@style/titles"
+            android:textSize="@dimen/qty" />
+
+        <CheckBox
+            android:id="@+id/notify_me_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:padding="@dimen/qty"
+            android:text="@string/cream" />
+
+        <CheckBox
+            android:id="@+id/notify_me_checkbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:padding="@dimen/qty"
+            android:text="@string/chocolate" />
+
+        <TextView
+            android:id="@+id/qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/qty"
+            android:textAppearance="@style/titles"
+            android:textSize="@dimen/qty" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/minus"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:onClick="decrement"
+                android:text="@string/minus"
+                android:textSize="@dimen/minus" />
+
+            <TextView
+                android:id="@+id/no_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/qty"
+                android:text="@string/no_value"
+                android:textAppearance="@style/titles"
+                android:textSize="@dimen/no_value" />
+
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:onClick="increment"
+                android:text="@string/plus"
+                android:textSize="@dimen/qty" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/price"
+            android:textAppearance="@style/titles"
+            android:textSize="@dimen/price" />
+
+        <TextView
+            android:id="@+id/order_summary_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/cost"
+            android:textAppearance="@style/titles" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="submitOrder"
+                android:padding="@dimen/activity_vertical_margin"
+                android:text="@string/order" />
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="reset"
+                android:padding="@dimen/activity_vertical_margin"
+                android:text="@string/next" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/thanks"
+            android:textAppearance="@style/messages"
+            android:textSize="@dimen/thanks" />
+
+    </LinearLayout>
+
+
+</ScrollView>
